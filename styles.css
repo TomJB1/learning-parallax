@@ -33,7 +33,8 @@ div > div
 
 }
 
-#lungswrapper
+#lungswrapper,
+#t2div
 {
     display: flex;
     flex-direction: column;
@@ -72,16 +73,34 @@ div > p
     color: #38543c;
 }
 
-div#wave
+div#wave,
+div#wave2
 {
     max-height: 1px;
 }
 
-div#wave > img
+div#wave > img,
+div#wave2 > img
 {
     max-height: 1000%;
     position: absolute;
-    min-width: 100%;
+    width: 100%;
     z-index: 5;
-    padding-top: 480px;
+    padding: 0px;
+}
+
+div#wave2 > img
+{
+    padding-top: 10vw;
+}
+
+
+div#wave > img
+{
+    padding-top: 34vw;
+}
+
+#text2
+{
+    position: absolute;
 }
