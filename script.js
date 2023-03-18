@@ -8,6 +8,7 @@ window.addEventListener("scroll", function()
     console.log(offsetVh)
     parallax1.style.backgroundPositionY = offset * 0.6 +"px";
     
+    
     text1.style.top = ((offsetVh * 0.6) + 300) +"px";
     text2.style.color = "hsl(213, 48%, 20%, " + 0 + ((offsetVh - 150) / 100) + ")";
 

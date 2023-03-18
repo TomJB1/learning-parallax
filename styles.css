@@ -14,7 +14,8 @@ div#scroller
     flex-direction: column;
 }
 
-div > div{
+div > div
+{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,25 +26,32 @@ div > div{
     scroll-snap-stop: always
 }
 
-div:nth-child(1)
+#parallax1
 {
     background-image: url(trees.webp);
     scroll-snap-align: center;
 
 }
 
+#lungswrapper
+{
+    display: flex;
+    flex-direction: column;
+}
+
 #effect2
 {
     background-color: hsl(213, 48%, 57%);
+    min-height: 80%;
 }
 
-div:nth-child(3)
+#t2div
 {
     background-image: url(forest2.jpg);
     background-attachment: fixed;
 }
 
-div:nth-child(4)
+#text4
 {
     background: #25587a;
 }
@@ -62,4 +70,18 @@ div > p
     font-family: arial black;
     font-size: 50px;
     color: #38543c;
+}
+
+div#wave
+{
+    max-height: 1px;
+}
+
+div#wave > img
+{
+    max-height: 1000%;
+    position: absolute;
+    min-width: 100%;
+    z-index: 5;
+    padding-top: 480px;
 }
